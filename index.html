@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Policy Pages</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            max-width: 500px;
+            width: 100%;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 32px;
+        }
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 35px;
+            font-size: 16px;
+        }
+        .policy-links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .policy-link {
+            display: flex;
+            align-items: center;
+            padding: 18px 25px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 500;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        }
+        .policy-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 25px rgba(102, 126, 234, 0.6);
+        }
+        .policy-link:active {
+            transform: translateY(-1px);
+        }
+        .icon {
+            font-size: 24px;
+            margin-right: 15px;
+        }
+        .contact-box {
+            margin-top: 35px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            text-align: center;
+            border-left: 4px solid #667eea;
+        }
+        .contact-box p {
+            color: #666;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+        .email {
+            color: #667eea;
+            font-weight: 600;
+            font-size: 16px;
+            word-break: break-all;
+        }
+        @media (max-width: 480px) {
+            .container {
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 26px;
+            }
+            .policy-link {
+                padding: 15px 20px;
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📄 Policy Pages</h1>
+        <p class="subtitle">Select a policy to view complete details</p>
+        
+        <div class="policy-links">
+            <a href="contact.html" class="policy-link">
+                <span class="icon">📧</span>
+                <span>Contact Us</span>
+            </a>
+            
+            <a href="terms.html" class="policy-link">
+                <span class="icon">📋</span>
+                <span>Terms and Conditions</span>
+            </a>
+            
+            <a href="refund-policy.html" class="policy-link">
+                <span class="icon">💰</span>
+                <span>Refund and Cancellation Policy</span>
+            </a>
+        </div>
+        
+        <div class="contact-box">
+            <p>For any queries, reach us at:</p>
+            <p class="email">phantrics@gmail.com</p>
+        </div>
+    </div>
+</body>
+</html>
